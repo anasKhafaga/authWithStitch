@@ -1,0 +1,16 @@
+@media all and (min-width: 480px) {
+  .Home {
+    margin: 20px auto;
+    max-width: 380px;
+  }
+
+  .btn2 {
+    margin-left: 10px;
+    width: 7rem;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
