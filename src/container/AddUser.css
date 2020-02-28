@@ -1,0 +1,6 @@
+@media all and (min-width: 480px) {
+  .adduser {
+    margin: 20px auto;
+    max-width: 380px;
+  }
+}

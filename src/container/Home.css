@@ -1,7 +1,8 @@
 @media all and (min-width: 480px) {
   .Home {
-    margin: 20px auto;
-    max-width: 380px;
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
   }
 
   .btn2 {

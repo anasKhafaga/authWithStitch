@@ -1,0 +1,6 @@
+@media all and (min-width: 480px) {
+  .users {
+    margin: 8rem auto;
+    max-width: 380px;
+  }
+}

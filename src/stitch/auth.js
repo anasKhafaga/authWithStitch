@@ -3,7 +3,7 @@ import {
   UserPasswordCredential
 } from 'mongodb-stitch-browser-sdk';
 import { app } from './app.js';
-
+import { Redirect } from 'react-router-dom'
 export function signupUser(email, password) {
   const emailClient = app.auth.getProviderClient(
     UserPasswordAuthProviderClient.factory
@@ -48,11 +48,12 @@ export function loginUser(email, password) {
   return app.auth
     .loginWithCredential(login)
     .then(res => {
-      alert('You are logged in');
+      return true;
     })
     .catch(err => {
       if (err) {
         alert('Oops! something went wrong.');
+        return false;
       }
     });
 }

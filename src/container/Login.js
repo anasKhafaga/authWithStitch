@@ -13,9 +13,11 @@ export default function Login(props) {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    await loginUser(email, password)
-    setEmail('');
-    setPassword('');
+    const login = await loginUser(email, password)
+    if (!login) {
+      return;
+    }
+    props.history.push('/users')
   }
 
   return (
